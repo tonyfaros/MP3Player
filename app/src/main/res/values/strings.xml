@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MP3 Player</string>
+    <string name="font_play">&#xf144;</string>
+    <string name="font_stop">&#xf28d;</string>
+    <string name="font_next">&#xf050;</string>
+    <string name="font_previus">&#xf049;</string>
+</resources>

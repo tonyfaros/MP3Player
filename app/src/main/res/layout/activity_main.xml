@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anthony_pc.mp3player.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+
+        <SeekBar
+            android:id="@+id/advanceSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/listViewSongs"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/colorPrimary">
+
+
+            </ListView>
+
+            <SeekBar
+                android:id="@+id/volumeSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:attr/textColorHighlight"
+                    android:onClick="clickPreviousSong"
+                    android:text="@string/font_previus"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/play_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:attr/textColorHighlight"
+                    android:onClick="clickPlay"
+                    android:text="@string/font_play"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?android:attr/textColorHighlight"
+                    android:onClick="clickNextSong"
+                    android:text="@string/font_next"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
