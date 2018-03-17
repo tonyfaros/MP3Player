@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         int currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 
         volumeSB.setMax(maxVolume);
-        
+
         volumeSB.setProgress(currentVolume);
 
         currentSong = 0;
