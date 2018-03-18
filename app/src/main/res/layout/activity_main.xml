@@ -25,9 +25,17 @@
             android:orientation="vertical">
 
             <ScrollView
+                android:id="@+id/scrollViewLyrics"
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:layout_marginTop="18dp">
 
+                <TextView
+                    android:id="@+id/TVLyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark" />
             </ScrollView>
 
             <ListView
